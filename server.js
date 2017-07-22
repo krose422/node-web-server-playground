@@ -49,6 +49,15 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
+
+//create /projects page (render 'portfolio page here')
+// in partials heade,r add link to portfolio
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Could not handle that request'
